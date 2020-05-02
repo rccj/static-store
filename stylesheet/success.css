@@ -10,8 +10,7 @@ body .container .header .hamburger, body .container .footer__top, body .containe
           align-items: center;
 }
 
-*input {
-  border-radius: 0;
+* {
   -webkit-appearance: none;
 }
 
@@ -350,7 +349,9 @@ body .container .footer__bottom__second__left > * {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-bottom: 20px;
+  }
+  body .container .header .mobile-bar > :last-child {
+    margin-bottom: 10px;
   }
   body .container .header .hamburger {
     display: -webkit-box;

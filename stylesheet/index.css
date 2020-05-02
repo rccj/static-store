@@ -53,8 +53,7 @@ body .container .home__main__click__area > *, body .container .home__topic__text
       writing-mode: vertical-rl;
 }
 
-*input {
-  border-radius: 0;
+* {
   -webkit-appearance: none;
 }
 
@@ -357,7 +356,9 @@ body .container .footer__bottom__second__left > * {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-bottom: 20px;
+  }
+  body .container .header .mobile-bar > :last-child {
+    margin-bottom: 10px;
   }
   body .container .header .hamburger {
     display: -webkit-box;
