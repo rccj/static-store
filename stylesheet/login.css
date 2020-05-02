@@ -265,7 +265,6 @@ body .container .footer__top__area__btns > input {
   outline: none;
   border: 0;
   font-size: 1.2em;
-  padding: 0 10px;
   border: 0px;
   height: 100%;
 }
@@ -504,6 +503,7 @@ body .container .login__left__first__email > input {
   height: 100%;
   font-size: 1em;
   color: #3f5d45;
+  border-radius: 0;
 }
 
 body .container .login__left__first__record > input {
