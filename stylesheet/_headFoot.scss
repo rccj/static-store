@@ -140,6 +140,7 @@ body {
               color: $main-deep;
             }
             & > input {
+              border-radius: 0;
               width: 60%;
               outline: none;
               border: 0;

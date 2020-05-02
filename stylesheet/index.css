@@ -53,10 +53,6 @@ body .container .home__main__click__area > *, body .container .home__topic__text
       writing-mode: vertical-rl;
 }
 
-* {
-  -webkit-appearance: none;
-}
-
 body {
   width: 100%;
   display: -webkit-box;
@@ -269,6 +265,7 @@ body .container .footer__top__area__btns i {
 }
 
 body .container .footer__top__area__btns > input {
+  border-radius: 0;
   width: 60%;
   outline: none;
   border: 0;
