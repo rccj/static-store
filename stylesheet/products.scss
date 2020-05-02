@@ -1,0 +1,208 @@
+@import "_variable.scss";
+@import "_reset.scss";
+@import "_headFoot.scss";
+
+body {
+  .container {
+    .products {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &__main {
+        max-width: 940px;
+        width: 100%;
+        height: 496px;
+        background: {
+          image: url("../img/product-page.jpg");
+          size: cover;
+          position: center;
+        }
+        margin-bottom: 60px;
+      }
+      &__content {
+        max-width: 940px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        &__list {
+          width: 33%;
+
+          & > * {
+            width: 100%;
+            height: 65px;
+            @extend %flexCenter;
+            color: $main-deep;
+          }
+          & > :nth-child(1) {
+            background-color: $main-deep;
+            color: $white;
+          }
+          & > :nth-child(2) {
+            background-color: $light-green;
+          }
+        }
+        .select {
+          width: 66%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-end;
+          margin-bottom: 20px;
+
+          &__item {
+            width: 50%;
+            padding: 0 0px 10px 10px;
+            box-sizing: border-box;
+            .itmeA {
+              background-image: url("../img/item1.jpg");
+            }
+            .itmeB {
+              background-image: url("../img/item2.jpg");
+            }
+            .itmeC {
+              background-image: url("../img/item3.jpg");
+            }
+            .itmeD {
+              background-image: url("../img/item4.jpg");
+            }
+            .itmeE {
+              background-image: url("../img/item5.jpg");
+            }
+            .itmeF {
+              background-image: url("../img/item6.jpg");
+            }
+            &__img {
+              width: 100%;
+              height: 315px;
+              display: flex;
+              justify-content: space-between;
+              box-sizing: border-box;
+              padding: 0 20px;
+              background: {
+                size: cover;
+                position: center;
+              }
+              &__text {
+                @extend %straightText;
+                @extend %flexCenter;
+                background-color: $main-deep;
+                color: $white;
+                height: 100px;
+                width: 36px;
+              }
+              &__heart {
+                margin-top: 20px;
+              }
+            }
+
+            &__name {
+              display: flex;
+              justify-content: space-around;
+              width: 100%;
+              height: 60px;
+              border: 1px solid $main-light;
+              box-sizing: border-box;
+              &__title {
+                @extend %flexCenter;
+                flex: 1.3;
+                justify-content: center;
+                border-right: 1px solid $main-light;
+              }
+              &__price {
+                @extend %flexCenter;
+                flex: 1;
+              }
+            }
+
+            &__addCart {
+              width: 100%;
+              height: 65px;
+              background-color: $main-light;
+              outline: none;
+              color: $main-deep;
+              font-size: 1.5em;
+              font-weight: 500;
+              border: 1px solid $main-light;
+              transition: all 0.3s;
+
+              &:hover {
+                color: $white;
+                background-color: $main-deep;
+              }
+            }
+          }
+        }
+      }
+
+      &__bottom {
+        width: 100%;
+        max-width: 940px;
+        margin-bottom: 60px;
+
+        &__page {
+          display: flex;
+          justify-content: flex-end;
+          & > * {
+            @extend %flexCenter;
+            width: 60px;
+            height: 60px;
+            border: 1px solid $light-green;
+            border-right: 0px;
+            color: $main-deep;
+            font-size: 1.2em;
+          }
+          & > :nth-child(2) {
+            background-color: $main-deep;
+            border: 1px solid $main-deep;
+            border-right: 0px;
+            color: $white;
+          }
+          & > :last-child {
+            border-right: 1px solid $light-green;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $m) {
+  body {
+    .container {
+      .products {
+        &__main {
+          width: 100%;
+          height: 277px;
+          margin-bottom: 0px;
+        }
+        &__content {
+          flex-direction: column;
+          justify-content: flex-start;
+
+          &__list {
+            width: 100%;
+            margin-bottom: 30px;
+          }
+          .select {
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+
+            &__item {
+              padding: 0px;
+              width: 80%;
+              margin-bottom: 30px;
+            }
+          }
+        }
+        &__bottom {
+          &__page {
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}

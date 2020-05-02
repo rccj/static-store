@@ -1,0 +1,117 @@
+@import "_variable.scss";
+@import "_reset.scss";
+@import "_headFoot.scss";
+
+body {
+  .container {
+    .mobile-btn {
+      display: none;
+      width: 100%;
+      height: 65px;
+      background-color: $yellow;
+      color: $main-deep;
+      text-decoration: none;
+      @extend %flexCenter;
+      font-size: 1.2em;
+      font-weight: 500;
+    }
+    .success {
+      margin: 30px 0 60px 0;
+      max-width: 940px;
+      width: 100%;
+      height: 460px;
+      background: {
+        image: url("../img/success-page.jpg");
+        size: cover;
+        position: center;
+      }
+      @extend %flexCenter;
+
+      &__container {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &__stepBar {
+          position: relative;
+
+          ul {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            &::before {
+              content: "";
+              position: absolute;
+              top: 50%;
+              width: 100%;
+              height: 1px;
+              background: $main-deep;
+            }
+            li {
+              width: 20px;
+              height: 20px;
+              background: $main-deep;
+              border-radius: 50%;
+              z-index: 1;
+            }
+            .done::after {
+              content: "";
+            }
+            & i {
+              position: relative;
+              top: -2px;
+              left: -1px;
+              color: $main-light;
+            }
+          }
+        }
+        &__text {
+          width: 100%;
+          height: 150px;
+          // margin: 0px 0;
+          background: {
+            image: url("../img/success.png");
+            size:contain;
+            repeat:no-repeat;
+            position: center;
+          }
+        }
+        &__btn {
+          width: 100%;
+          height: 65px;
+          background-color: $yellow;
+          color: $main-deep;
+          text-decoration: none;
+          @extend %flexCenter;
+          font-size: 1.2em;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+@media screen and(max-width:$m) {
+  body {
+    .container {
+      .mobile-btn {
+        display: flex;
+      }
+      .success {
+        width: 100%;
+        margin: 0;
+        &__container{
+          width: 50%;
+          &__text{
+            height: 100px;
+
+          }
+          &__btn{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

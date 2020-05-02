@@ -1,0 +1,261 @@
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "PingFang TC", "cwTeXYen", sans-serif;
+
+  .container {
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .header {
+      max-width: 940px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      &__left {
+      height: 100px;
+      display: flex;
+      align-items: center;
+        & > * {
+          width: 200px;
+        }
+      }
+      &__right{
+      height: 100px;
+      display: flex;
+      align-items: center;
+      }
+      //手機側邊欄
+      .hamburger {
+        cursor: pointer;
+        display: none;
+        @extend %flexCenter;
+        width: 15%;
+        span {
+          margin: 5px 0;
+          position: relative;
+          width: 18px;
+          height: 2px;
+          border-radius: 2px;
+          background: $main-deep;
+          &:before,
+          &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: $main-deep;
+          }
+          &:before {
+            top: -5px;
+          }
+          &:after {
+            top: 5px;
+          }
+        }
+      }
+      .mobile-bar {
+        display: none;
+        background: $white;
+        width: 100%;
+        flex-direction: column;
+        padding-bottom: 20px ;
+        align-items: center;
+
+        li {
+          margin: 0;
+          padding: 10px 0;
+          width: 90%;
+          border-bottom: 1px solid $main-light;
+          &:hover{
+            background-color: $yellow;
+          }
+          & a {
+            text-decoration: none;
+            color: $main-deep;
+          }
+          &:last-child {
+            border: none;
+          }
+        }
+      }
+      //正常頁面
+      &__right {
+        display: flex;
+        justify-content: space-between;
+        width: 35%;
+        & > a {
+          color: $main-deep;
+          text-decoration: none;
+          transition: all 0.3s;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .footer {
+      width: 100%;
+      &__top {
+        @extend %flexCenter;
+        height: 116px;
+        background-color: $main-deep;
+
+        &__area {
+          width: 80%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          &__img {
+            display: flex;
+            align-items: center;
+            color: $white;
+            font-size: 1.5em;
+
+            & > :first-child {
+              width: 40px;
+              margin: 0 10px 0 0;
+            }
+          }
+          &__btns {
+            width: 40%;
+            height: 56px;
+            display: flex;
+            justify-content: flex-end;
+            & > :first-child {
+              width: 20%;
+              @extend %flexCenter;
+              background-color: white;
+            }
+            & i {
+              color: $main-deep;
+            }
+            & > input {
+              width: 60%;
+              outline: none;
+              border: 0;
+              font-size: 1.2em;
+            }
+            & > :last-child {
+              @extend %flexCenter;
+              background-color: $yellow;
+              width: 20%;
+            }
+          }
+        }
+      }
+      &__bottom {
+        @extend %flexCenter;
+        height: 341px;
+        width: 100%;
+        color: $main-deep;
+        flex-direction: column;
+        background-color: $main-light;
+
+        &__first {
+          flex: 3;
+          width: 80%;
+          display: flex;
+          justify-content: space-between;
+
+          &__left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            line-height: 25px;
+
+            & > :first-child {
+              width: 170px;
+            }
+          }
+          &__right {
+            width: 50px;
+            height: 100%;
+            background: {
+              image: url("../img/sm-footer.png");
+              size: contain;
+              repeat: no-repeat;
+              position: center;
+            }
+          }
+        }
+        &__second {
+          flex: 1;
+          width: 80%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          &__left {
+            & > * {
+              width: 32px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $m) {
+  body {
+    .container {
+      .header {
+        .mobile-bar{
+          display: flex;
+        }
+        .hamburger {
+          display: flex;
+        }
+        &__right {
+          width: 15%;
+          & > :nth-child(1),
+          & > :nth-child(2),
+          & > :nth-child(3) {
+            display: none;
+          }
+        }
+      }
+      .footer {
+        &__top {
+          height: 186px;
+          &__area {
+            flex-direction: column;
+            justify-content: space-between;
+            height: 60%;
+            &__btns {
+              width: 100%;
+            }
+          }
+        }
+        &__bottom {
+          height: 311px;
+          &__first {
+            flex: 1;
+            &__left {
+              justify-content: start;
+            }
+            &__right {
+              display: none;
+            }
+          }
+          &__second {
+            flex: 1;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+          }
+        }
+      }
+    }
+  }
+}

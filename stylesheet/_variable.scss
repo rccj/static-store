@@ -1,0 +1,20 @@
+%flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%straightText{
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+}
+
+$main-deep: #3f5d45;
+$main-text: #8DA291;
+$main-light: #EAF0ED;
+$yellow: #ffe180;
+$black: #000;
+$white: #fff;
+
+$m:768px;
+$s:375px;
