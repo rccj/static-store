@@ -260,7 +260,6 @@ body .container .footer__top__area__btns i {
 body .container .footer__top__area__btns > input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0 0 0 10px;
   border-radius: 0;
   width: 60%;
   outline: none;
