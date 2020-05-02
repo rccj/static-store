@@ -1,4 +1,4 @@
-# 計算機
+# 靜態電商網頁
 
 [Demo](https://rccj.github.io/static-store/)
 

@@ -19,17 +19,17 @@ body {
       justify-content: space-between;
       align-items: center;
       &__left {
-      height: 100px;
-      display: flex;
-      align-items: center;
-        & > * {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        & img {
           width: 200px;
         }
       }
-      &__right{
-      height: 100px;
-      display: flex;
-      align-items: center;
+      &__right {
+        height: 100px;
+        display: flex;
+        align-items: center;
       }
       //手機側邊欄
       .hamburger {
@@ -66,15 +66,15 @@ body {
         background: $white;
         width: 100%;
         flex-direction: column;
-        padding-bottom: 20px ;
         align-items: center;
 
         li {
+          display: none;
           margin: 0;
           padding: 10px 0;
           width: 90%;
           border-bottom: 1px solid $main-light;
-          &:hover{
+          &:hover {
             background-color: $yellow;
           }
           & a {
@@ -210,8 +210,9 @@ body {
   body {
     .container {
       .header {
-        .mobile-bar{
+        .mobile-bar {
           display: flex;
+          padding-bottom: 20px;
         }
         .hamburger {
           display: flex;

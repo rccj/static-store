@@ -21,7 +21,7 @@ body {
           padding: 30px 40px;
           box-sizing: border-box;
           background-color: $main-deep;
-          color: $light-green;
+          color: $main-light;
 
           &__title {
             display: flex;
@@ -81,11 +81,11 @@ body {
               height: 56px;
               @extend %flexCenter;
               background-color: $main-deep;
-              border: 1px solid $light-green;
+              border: 1px solid $main-light;
               cursor: pointer;
 
               &:hover {
-                background-color: $light-green;
+                background-color: $main-light;
                 color: $main-deep;
               }
             }
@@ -97,7 +97,7 @@ body {
 
             #tab1:checked + label,
             #tab2:checked + label {
-              background-color: $light-green;
+              background-color: $main-light;
               color: $main-deep;
             }
             #tab1:checked ~ .formA,
@@ -117,7 +117,7 @@ body {
                   width: 100%;
                   height: 56px;
                   box-sizing: border-box;
-                  background-color: $light-green;
+                  background-color: $main-light;
                   border: 0px;
                   font-size: 1.2em;
                   color: $main-text;
@@ -154,7 +154,7 @@ body {
                   width: 49%;
                   box-sizing: border-box;
                   height: 56px;
-                  background-color: $light-green;
+                  background-color: $main-light;
                   border: 0px;
                   color: $main-text;
                   font-size: 1em;
@@ -173,7 +173,7 @@ body {
                 width: 100%;
                 height: 56px;
                 box-sizing: border-box;
-                background-color: $light-green;
+                background-color: $main-light;
                 border: 0px;
                 font-size: 1.2em;
                 padding: 0 20px;
@@ -186,7 +186,7 @@ body {
                   width: 100%;
                   height: 56px;
                   box-sizing: border-box;
-                  background-color: $light-green;
+                  background-color: $main-light;
                   border: 0px;
                   font-size: 1.2em;
                   color: $main-text;
@@ -264,13 +264,13 @@ body {
           width: 100%;
           display: flex;
           flex-direction: column;
-          border: solid 1px $light-green;
+          border: solid 1px $main-light;
 
           &__title {
             width: 100%;
             height: 65px;
             color: $main-text;
-            background-color: $light-green;
+            background-color: $main-light;
             @extend %flexCenter;
             font-size: 1.5em;
             font-weight: 500;

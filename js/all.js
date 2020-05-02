@@ -1,6 +1,6 @@
 (function(){
   function menuHandler(){
-    $('.mobile-bar').stop().slideToggle()
+    $('.mobile-bar li').stop().slideToggle()
   }
   $('.hamburger').click(menuHandler)
 })()

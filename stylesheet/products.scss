@@ -41,7 +41,7 @@ body {
             color: $white;
           }
           & > :nth-child(2) {
-            background-color: $light-green;
+            background-color: $main-light;
           }
         }
         .select {
@@ -148,7 +148,7 @@ body {
             @extend %flexCenter;
             width: 60px;
             height: 60px;
-            border: 1px solid $light-green;
+            border: 1px solid $main-light;
             border-right: 0px;
             color: $main-deep;
             font-size: 1.2em;
@@ -160,7 +160,7 @@ body {
             color: $white;
           }
           & > :last-child {
-            border-right: 1px solid $light-green;
+            border-right: 1px solid $main-light;
           }
         }
       }

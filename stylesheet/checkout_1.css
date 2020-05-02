@@ -10,6 +10,11 @@ body .container .header .hamburger, body .container .footer__top, body .containe
           align-items: center;
 }
 
+*input {
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -98,7 +103,7 @@ body .container .header__left {
           align-items: center;
 }
 
-body .container .header__left > * {
+body .container .header__left img {
   width: 200px;
 }
 
@@ -152,17 +157,17 @@ body .container .header .mobile-bar {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 body .container .header .mobile-bar li {
+  display: none;
   margin: 0;
   padding: 10px 0;
   width: 90%;
-  border-bottom: 1px solid #eaf0ed;
+  border-bottom: 1px solid #EAF0ED;
 }
 
 body .container .header .mobile-bar li:hover {
@@ -277,7 +282,7 @@ body .container .footer__bottom {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #eaf0ed;
+  background-color: #EAF0ED;
 }
 
 body .container .footer__bottom__first {
@@ -345,6 +350,7 @@ body .container .footer__bottom__second__left > * {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-bottom: 20px;
   }
   body .container .header .hamburger {
     display: -webkit-box;
@@ -444,7 +450,7 @@ body .container .checkout_1 .ship .form {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #3f5d45;
-  color: #eaf0ed;
+  color: #EAF0ED;
 }
 
 body .container .checkout_1 .ship .form__title {
@@ -479,14 +485,14 @@ body .container .checkout_1 .ship .form__title ul::before {
   top: 50%;
   width: 50%;
   height: 1px;
-  background: #eaf0ed;
+  background: #EAF0ED;
 }
 
 body .container .checkout_1 .ship .form__title ul li {
   width: 17px;
   height: 17px;
   background: #3f5d45;
-  border: 1px solid #eaf0ed;
+  border: 1px solid #EAF0ED;
   border-radius: 50%;
   z-index: 1;
 }
@@ -500,7 +506,7 @@ body .container .checkout_1 .ship .form__title ul .done::after {
   border-radius: 50%;
   -webkit-transform: translate(10%, -55%);
           transform: translate(10%, -55%);
-  background: #eaf0ed;
+  background: #EAF0ED;
 }
 
 body .container .checkout_1 .ship .form__name {
@@ -521,7 +527,7 @@ body .container .checkout_1 .ship .form__name input {
   height: 56px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #eaf0ed;
+  background-color: #EAF0ED;
   border: 0px;
   font-size: 1.2em;
   color: #8DA291;
@@ -539,7 +545,7 @@ body .container .checkout_1 .ship .form__phone > input {
   height: 56px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #eaf0ed;
+  background-color: #EAF0ED;
   border: 0px;
   font-size: 1.2em;
   color: #8DA291;
@@ -577,7 +583,7 @@ body .container .checkout_1 .ship .form__area select {
   height: 56px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #eaf0ed;
+  background-color: #EAF0ED;
   border: 0px;
   color: #8DA291;
   font-size: 1em;
@@ -598,7 +604,7 @@ body .container .checkout_1 .ship .form__address {
   height: 56px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #eaf0ed;
+  background-color: #EAF0ED;
   border: 0px;
   font-size: 1.2em;
   padding: 0 20px;
@@ -642,7 +648,7 @@ body .container .checkout_1 .order .cart-check {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  border: 1px solid #eaf0ed;
+  border: 1px solid #EAF0ED;
   margin-bottom: 20px;
 }
 
@@ -690,7 +696,7 @@ body .container .checkout_1 .order .cart-check__first > :nth-child(3) {
 body .container .checkout_1 .order .cart-check__second {
   width: 100%;
   height: 65px;
-  background-color: #eaf0ed;
+  background-color: #EAF0ED;
   text-decoration: none;
   color: #8DA291;
   font-size: 1.6em;
@@ -705,14 +711,14 @@ body .container .checkout_1 .order .cart-list {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: solid 1px #eaf0ed;
+  border: solid 1px #EAF0ED;
 }
 
 body .container .checkout_1 .order .cart-list__title {
   width: 100%;
   height: 65px;
   color: #8DA291;
-  background-color: #eaf0ed;
+  background-color: #EAF0ED;
   font-size: 1.5em;
   font-weight: 500;
   margin-bottom: 8px;

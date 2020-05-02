@@ -18,7 +18,7 @@ body {
           width: 100%;
           height: 65px;
           color: $main-deep;
-          background-color: $light-green;
+          background-color: $main-light;
           @extend %flexCenter;
           font-size: 1.5em;
           font-weight: 500;
@@ -30,7 +30,7 @@ body {
           color: $main-deep;
           justify-content: space-between;
           align-items: center;
-          border-bottom: 1px solid $light-green;
+          border-bottom: 1px solid $main-light;
           padding-bottom: 20px;
           margin-bottom: 20px;
           .itmeA {
@@ -69,7 +69,7 @@ body {
                 width: 48px;
                 height: 48px;
                 background-color: $white;
-                border: 1px solid $light-green;
+                border: 1px solid $main-light;
                 @extend %flexCenter;
               }
             }
@@ -161,7 +161,7 @@ body {
             }
             &__price{
               width:100%;
-              border-top: 1px solid $light-green;
+              border-top: 1px solid $main-light;
               margin: 5px 0 ;
               padding-top:5px ;
               text-align: right;
@@ -175,7 +175,7 @@ body {
             background-color: $white;
 
             & > :first-child {
-              background-color: $light-green;
+              background-color: $main-light;
               color: $main-deep;
               padding-top: 16px;
             }
